@@ -1,0 +1,129 @@
+/*Neropol Font Family*/
+@import url("https://use.typekit.net/sij2ocm.css");
+/*Questrial Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root{
+    --primary-blue: #7FA8AE;
+    --accented-blue: #6e9096;
+    --primary-gray: #333333;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.bannerImage{
+    width: 100%;
+    height: 500px;
+    opacity: 50%;
+    object-fit: cover;
+    z-index: -9;
+}
+.banner-container{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+/*Aspire Therapy Header on image*/
+.banner-container .Center{
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: Questrial;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--primary-gray);
+}
+.primary-color{
+    color: var(--primary-blue);
+}
+.accented-color{
+    color: var(--accented-blue);
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    background-color: var(--primary-blue);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: var(--primary-gray);
+    color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: var(--primary-gray);
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  .columnContent1{
+        text-align: center;
+  }
+  .columnContent1 .col-sm{
+    background-color: var(--primary-blue);
+    height: 500px;
+  }
+  .columnContent1 .col-sm:last-of-type{
+    background-color: var(--accented-blue);
+  }
+  .quote{
+    margin: 40px;
+  }
+  .home-statement{
+    text-align: center;
+    background-color: var(--primary-gray);
+    height: 700px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .home-statement .text{
+      color: white;
+  }
+  .accented-color{
+      margin-bottom: 0px;
+  }
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
