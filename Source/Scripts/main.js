@@ -7,3 +7,9 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+function checkBrowser(){
+  if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    var browserType = document.getElementById("browserinfo");
+    browserType.innerHTML = "it seems you are using mobile(Test for detection";
+   }
+}
