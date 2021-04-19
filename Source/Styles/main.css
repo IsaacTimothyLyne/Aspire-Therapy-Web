@@ -10,7 +10,10 @@
 }
 html{
     overflow-x: hidden;
-    scroll-behavior: xlooth;
+    scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
 }
 .bannerImage{
     width: 100%;
@@ -81,9 +84,19 @@ html{
   }
   .columnContent1{
         text-align: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+  }
+  .row{
+  }
+  .btnmain{
+    margin-bottom: 20px;
   }
   .columnContent1 .col-xl{
+    margin-top: 20px;
     height: 250px;
+    padding-bottom: 20px;
+    align-items: center;
     overflow: hidden;
     text-align: center;
   }
