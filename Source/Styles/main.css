@@ -118,7 +118,7 @@ body{
     object-fit: cover;
     transition: all 0.2s ease;
     display: block;
-    z-index: -9;
+    z-index: 9;
   }
   .columnContent1 .col-xl:hover img{
     opacity: 0.3;
