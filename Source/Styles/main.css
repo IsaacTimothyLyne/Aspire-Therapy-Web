@@ -49,6 +49,7 @@ html{
     top: 0;
     background-color: transparent;
     overflow: hidden;
+    transition: all 0.2s;
   }
   
   /* Style the links inside the navigation bar */
