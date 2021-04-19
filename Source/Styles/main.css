@@ -83,14 +83,42 @@ html{
         text-align: center;
   }
   .columnContent1 .col-sm{
-    background-color: var(--primary-blue);
-    height: 500px;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
   }
-  .columnContent1 .col-sm:last-of-type{
-    background-color: var(--accented-blue);
+  .columnContent1 .col-sm img{
+    width: 420px;
+    position: absolute;
+    height: 250px;
+    opacity: 0.7;
+    object-fit: cover;
+    border: var(--primary-gray) solid;
+    transition: all 0.2s ease;
+    display: block;
+    z-index: -9;
+  }
+  .columnContent1 .col-sm:hover img{
+    opacity: 0.3;
+  }
+  .services-middle-text{
+    color: black;
+    opacity: 0;
+    z-index: 9;
+    padding-top: 25%;
+    transition: .2s ease;
+  }
+  .serv-link{
+    text-decoration: none;
+  }
+  .columnContent1 .col-sm:hover .services-middle-text {
+    opacity: 1;
   }
   .quote{
     margin: 40px;
+  }
+  .btnFom{
+    margin-top: 20px;
   }
   .home-statement{
     padding: 20px;
@@ -101,6 +129,10 @@ html{
   .home-statement .text{
     text-align: left;
       color: white;
+  }
+  .home-statement img{
+    width: 50%;
+    padding-bottom: 20px;
   }
   .accented-color{
       margin-bottom: 0px;
