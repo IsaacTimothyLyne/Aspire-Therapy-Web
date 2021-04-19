@@ -10,7 +10,7 @@
 }
 html{
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: xlooth;
 }
 .bannerImage{
     width: 100%;
@@ -75,20 +75,22 @@ html{
     color: white;*/
   }
   
-  /* Hide the link that should open and close the topnav on small screens */
+  /* Hide the link that should open and close the topnav on xlall screens */
   .topnav .icon {
     display: none;
   }
   .columnContent1{
         text-align: center;
   }
-  .columnContent1 .col-sm{
+  .columnContent1 .col-xl{
     height: 250px;
     overflow: hidden;
     text-align: center;
   }
-  .columnContent1 .col-sm img{
+  .columnContent1 .col-xl img{
     width: 420px;
+    float: left;
+    max-width: 100vw;
     position: absolute;
     height: 250px;
     opacity: 0.7;
@@ -98,7 +100,7 @@ html{
     display: block;
     z-index: -9;
   }
-  .columnContent1 .col-sm:hover img{
+  .columnContent1 .col-xl:hover img{
     opacity: 0.3;
   }
   .services-middle-text{
@@ -111,7 +113,7 @@ html{
   .serv-link{
     text-decoration: none;
   }
-  .columnContent1 .col-sm:hover .services-middle-text {
+  .columnContent1 .col-xl:hover .services-middle-text {
     opacity: 1;
   }
   .quote{
@@ -151,7 +153,7 @@ html{
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on xlall screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
