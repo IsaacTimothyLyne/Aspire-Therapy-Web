@@ -141,6 +141,10 @@ body{
   }
   .btnFom{
     margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .gallery-container{
+    text-align: center;
   }
   .home-statement{
     padding: 20px;

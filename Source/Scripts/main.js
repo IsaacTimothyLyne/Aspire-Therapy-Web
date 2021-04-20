@@ -3,16 +3,13 @@ function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
+    document.getElementById("topbar-logo").style.float="none";
   } else {
     x.className = "topnav";
+    document.getElementById("topbar-logo").style.float="left";
   }
 }
-function checkBrowser(){
-  if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    var browserType = document.getElementById("browserinfo");
-    browserType.innerHTML = "it seems you are using mobile(Test for detection";
-   }
-}
+
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
