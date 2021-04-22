@@ -29,7 +29,7 @@ body{
 }
 /*Aspire Therapy Header on image*/
 .banner-container .Center{
-    top: 50%;
+    top: 40%;
     width: 100%;
     position: absolute;
     text-align: center;
@@ -109,6 +109,10 @@ width: 100px;
         text-align: center;
         overflow-x: hidden;
         overflow-y: hidden;
+  }
+  .welcome-message{
+    padding-bottom: 20px;
+    font-weight: bold;
   }
   .row{
   }
