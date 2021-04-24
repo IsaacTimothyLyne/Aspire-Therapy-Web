@@ -6,10 +6,14 @@ if(isset($_POST['submitted'])){
         $message = $_POST['content'];
 
         $mailTo = 'isaacl@enlock.co.nz';       
-        $headers = "From: ".$mailfrom;
+        $headers['From'] = $mailfrom;
 
         $txt = "Hey! You have recieved an email from ".$name."\n\n".$message;
 
         mail($mailTo, $subject, $txt, $headers);
+        echo '<script type="text/javascript">',
+        'emailsent();',
+        '</script>'
+        header("Location: index.html");
 }
 ?>

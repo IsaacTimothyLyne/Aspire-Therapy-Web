@@ -20,6 +20,9 @@ function openNavGlobal(){
   }
 }
 
+function emailsent(){
+  document.getElementById("email-sent").className = "alert alert-success";
+}
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
