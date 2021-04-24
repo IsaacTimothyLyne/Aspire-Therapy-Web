@@ -5,8 +5,8 @@ if(isset($_POST['submitted'])){
         //Settings for your email address//
         ///////////////////////////////////
         
-        ini_set('SMTP','enlock-co-nz.mail.protection.outlook.com');//Email Server
-        $mailTo = 'isaacl@enlock.co.nz';//Email 
+        ini_set('SMTP','smtp.gmail.com');//Email Server
+        $mailTo = 'isaactimothylyne@gmail.com';//Email 
         
 
         //All variables from contact form
