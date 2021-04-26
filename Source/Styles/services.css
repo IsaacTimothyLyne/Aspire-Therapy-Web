@@ -6,9 +6,12 @@
     z-index: -9;
     padding-bottom: 50px;
 }
-.services-container{
-    text-align: center;
+.services-container .col-xl i{
+    padding: 20px;
 }
-.services-header{
-
+.home-statement{
+    margin-bottom: 20px;
+}
+.fas{
+    padding: 20px;
 }

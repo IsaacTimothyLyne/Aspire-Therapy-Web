@@ -19,7 +19,6 @@ function openNavGlobal(){
     document.getElementById("topbar-logo").style.float="left";
   }
 }
-
 function emailsent(){
   document.getElementById("email-sent").className = "alert alert-success";
 }
@@ -34,4 +33,7 @@ function scrollFunction() {
     document.getElementById("myTopnav").style.backgroundColor = '';
     document.getElementById("myTopnav").style.borderBottom = '';
   }
+}
+function collapseaccordian(toCollapse){
+  (toCollapse).collapse("toggle");
 }

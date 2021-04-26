@@ -10,10 +10,11 @@ if(isset($_POST['submitted'])){
         
 
         //All variables from contact form
-        $name = $_POST['firstname'];
+        $name = $_POST['name'];
         $mailfrom = $_POST['email'];
-        $subject = $_POST['subject'];
         $message = $_POST['content'];
+
+        $subject = 'Message from website!';
 
         $headers['From'] = $mailfrom;
 

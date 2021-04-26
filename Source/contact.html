@@ -8,15 +8,18 @@
         <meta name="description" content="Arise Therapy! Therapy tools, appointments, and advice to help you get through tough times in your life.">
         <meta name="keywords" content="Therapy, Arise Therapy, Arise, Evelyn, Aranas, ifix, google">
         <meta name="author" content="Isaac Lyne">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--BootStrap Integration-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <!--External Style Sheets-->
         <link rel="stylesheet" href="Styles/main.css">
         <link rel="stylesheet" href="Styles/contactform.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--External JS Scripts-->
         <script src="Scripts/main.js"></script>
         <script src="https://kit.fontawesome.com/36b4e63456.js" crossorigin="anonymous"></script>
@@ -26,17 +29,19 @@
     <!--Start of Displayable Webpage-->
     <body>
         <!-- Load an icon library to show a hamburger menu (bars) on xlall screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--If there is tabs place in here-->
-        <div class="topnav-global" id="myTopnav-global">
+        <div
+            class="topnav-global" id="myTopnav-global">
             <!--Navigation Bar located Logo-->
             <a href="index.html"><img src="content/Logo-concept-trans.png" class="logo" id="topbar-logo" alt="arise logo"></a>
             <!--<a href="index.html" class="image"><img src="" alt="Arise Therapy Logo"></a>-->
             <!--Navigation menu topbar-->
-                <a href="index.html" class="navbutton">Home</a>
-                <a href="services.html" class="navbutton">Services</a>
-                <a href="contact.html" class="navbutton">Contact</a>
-                <a href="about.html" class="navbutton">About</a>
+            <a href="index.html" class="navbutton">Home</a>
+            <a href="services.html" class="navbutton">Services</a>
+            <a href="contact.html" class="navbutton">Contact</a>
+            <a href="about.html" class="navbutton">About</a>
             <!--Hamburger Collapsable Icon for Web-->
             <a href="javascript:void(0);" class="icon navbutton" onclick="openNavGlobal()">
                 <i class="fa fa-bars"></i>
@@ -54,35 +59,50 @@
                     <form action="emailconf.php" method="POST">
 
                         <input type="text" id="name" name="name" placeholder="Name" required>
-          
+
                         <input type="email" id="email" name="email" placeholder="Email" required>
-                    
+
                         <textarea id="content" name="content" placeholder="Message" style="height:200px" required></textarea>
-                    
+
                         <input type="submit" name="submitted" value="Send Message">
-                    
-                      </form>
+
+                    </form>
                 </div>
                 <div class="col-xl">
-                    <h5><i class="fas fa-envelope" style="padding-right: 20px;"></i><a href="mailto:emfaranas@gmail.com">emfaranas@gmail.com</a></h5>
-                    <h5><i class="fas fa-phone" style="padding-right: 20px;"></i><a href="ph:0225308496">0225308496</a></h5>
-                    <h5><i class="fas fa-map-marker-alt" style="padding-right: 20px;"></i></h5>
-
+                    <h5>
+                        <i class="fas fa-envelope" style="padding-right: 20px;"></i>
+                        <a href="mailto:emfaranas@gmail.com">emfaranas@gmail.com</a>
+                    </h5>
+                    <h5>
+                        <i class="fas fa-phone" style="padding-right: 20px;"></i>
+                        <a href="tel:0225308496">0225308496</a>
+                    </h5>
+                    <h5>
+                        <i class="fas fa-map-marker-alt" style="padding-right: 20px;"></i>
+                        <a href="https://www.google.co.nz/maps/place/85+Ngatai+Road,+Ot%C5%ABmoetai,+Tauranga+3110/@-37.6678993,176.1526288,17z/data=!3m1!4b1!4m5!3m4!1s0x6d6ddb8cb552f4fb:0xf40115676f42593b!8m2!3d-37.6678993!4d176.1548175">85 Ngatai Road, Otūmoetai, Tauranga 3110</a>
+                    </h5>
+                    <!--Map Display-->
+                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:250px;">
+                        <div id="gmapcanvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=85+Ngatai+Road,+Otūmoetai,+Tauranga+3110&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
+        </div>
         <hr>
         <div class="footer-container">
             <div class="container">
                 Office hours - 4.30 to 7:00 PM Monday to Friday<br>
-                               9.00 to 4.00 PM Saturday<br>
+                9.00 to 4.00 PM Saturday<br>
                 Sundays by appointment only<br>
-                Telephone: <a href="tel:0225308496">0225308496</a><Br><br>
+                Telephone:
+                <a href="tel:0225308496">0225308496</a><Br><br>
                 ©Arise Therapy 2021
             </div>
         </div>
         <script>
             AOS.init();
-          </script>
+        </script>
     </body>
-</html>
+</html></body></html>
