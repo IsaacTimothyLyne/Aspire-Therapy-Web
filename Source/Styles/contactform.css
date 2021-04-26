@@ -1,6 +1,7 @@
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], [type="email"], select, textarea {
-    width: 100%; /* Full width */
+input[type=text], [type="email"]{
+    width: 50%; /* Full width */
+    float: left;
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -9,7 +10,17 @@ input[type=text], [type="email"], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
-  
+  textarea{
+    width: 100%; /* Full width */
+    float: left;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #7FA8AE;;
@@ -18,6 +29,7 @@ input[type=text], [type="email"], select, textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    float: right;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -30,6 +42,11 @@ input[type=text], [type="email"], select, textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+  .formcontainer a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
   }
   .bannerImage{
     width: 100%;

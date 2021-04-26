@@ -49,30 +49,27 @@
             </div>
         </div>
         <div class="container formcontainer">
-            <div class="alert alert-success" role="alert" id='email-sent'>
-                
+            <div class="row">
+                <div class="col-xl">
+                    <form action="emailconf.php" method="POST">
+
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+          
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    
+                        <textarea id="content" name="content" placeholder="Message" style="height:200px" required></textarea>
+                    
+                        <input type="submit" name="submitted" value="Send Message">
+                    
+                      </form>
+                </div>
+                <div class="col-xl">
+                    <h5><i class="fas fa-envelope" style="padding-right: 20px;"></i><a href="mailto:emfaranas@gmail.com">emfaranas@gmail.com</a></h5>
+                    <h5><i class="fas fa-phone" style="padding-right: 20px;"></i><a href="ph:0225308496">0225308496</a></h5>
+                    <h5><i class="fas fa-map-marker-alt" style="padding-right: 20px;"></i></h5>
+
+                </div>
             </div>
-
-            <form action="emailconf.php" method="POST">
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Message Title" required>
-
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email..." required>
-          
-              <label for="content">Message</label>
-              <textarea id="content" name="content" placeholder="Send message to arise therapy here..." style="height:200px" required></textarea>
-          
-              <input type="submit" name="submitted" value="Send">
-          
-            </form>
           </div>
         <hr>
         <div class="footer-container">

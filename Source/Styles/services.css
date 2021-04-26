@@ -1,0 +1,14 @@
+.bannerImage{
+    width: 100%;
+    height: 500px;
+    opacity: 40%;
+    object-fit: cover;
+    z-index: -9;
+    padding-bottom: 50px;
+}
+.services-container{
+    text-align: center;
+}
+.services-header{
+
+}
