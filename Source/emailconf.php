@@ -8,6 +8,9 @@ if(isset($_POST['submitted'])){
         ini_set('SMTP','gmail.com');//Email Server
         $mailTo = 'emfaranas@gmail.com';//Email 
         
+        //settings for email port
+        ini_set('smtp_port',25);
+        
 
         //All variables from contact form
         $name = $_POST['name'];
@@ -20,9 +23,6 @@ if(isset($_POST['submitted'])){
 
         //Formatting for the email to be sent
         $txt = "Hey! You have recieved an email from ".$name."\n\n".$message;
-
-        //settings for email port
-        ini_set('smtp_port',25);
         
         //send the email
         mail($mailTo, $subject, $txt, $headers);
