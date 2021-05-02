@@ -35,11 +35,15 @@ body{
     text-align: center;
     font-family: Questrial;
     font-weight: bold;
-    font-size: 30px;
-    color: var(--primary-gray);
+    font-size: 3rem;
+    color: #587377;
 }
 .primary-color{
     color: black;
+}
+.primary-green{
+  color: #587377;
+  font-size: 3rem;
 }
 .accented-color{
     color: var(--accented-blue);
@@ -111,8 +115,11 @@ width: 100px;
         overflow-y: hidden;
   }
   .welcome-message{
+    color: #587377;
     padding-bottom: 20px;
+    font-size: 3rem;
     font-weight: bold;
+    padding-bottom: 50px;
   }
   .btnmain{
     margin-bottom: 20px;
@@ -147,8 +154,14 @@ width: 100px;
     padding-top: 25%;
     transition: .2s ease;
   }
+  .serv-text{
+    font-size: 1.75rem;
+  }
   .serv-link{
     text-decoration: none;
+  }
+  .serv-link:last-of-type{
+    filter: sepia(10%);
   }
   .columnContent1 .col-xl:hover .services-middle-text {
     opacity: 1;
