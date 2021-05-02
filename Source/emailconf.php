@@ -5,8 +5,8 @@ if(isset($_POST['submitted'])){
         //Settings for your email address//
         ///////////////////////////////////
         
-        ini_set('SMTP','smtp.gmail.com');//Email Server
-        $mailTo = 'isaactimothylyne@gmail.com';//Email 
+        ini_set('SMTP','gmail.com');//Email Server
+        $mailTo = 'emfaranas@gmail.com';//Email 
         
 
         //All variables from contact form
