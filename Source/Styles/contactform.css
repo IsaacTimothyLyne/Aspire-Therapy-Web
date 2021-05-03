@@ -56,3 +56,9 @@ input[type=text], [type="email"]{
     z-index: -9;
     padding-bottom: 50px;
 }
+.col-xl:last-of-type{
+  color: #587377;
+}
+a{
+  color: #587377;
+}
